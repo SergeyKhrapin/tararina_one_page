@@ -76,7 +76,6 @@ h2.heading {
     color: #3cb4f0;
     opacity: .5;
 }
-
 .form input::-ms-input-placeholder {
     font-family: 'HelveticaNeueCyr';
     font-size: 20px;
@@ -84,7 +83,6 @@ h2.heading {
     color: #3cb4f0;
     opacity: .5;
 }
-
 .form input:-ms-input-placeholder {
     font-family: 'HelveticaNeueCyr';
     font-size: 20px;
@@ -92,7 +90,6 @@ h2.heading {
     color: #3cb4f0;
     opacity: .5;
 }
-
 .form input::-moz-placeholder {
     font-family: 'HelveticaNeueCyr';
     font-size: 20px;
@@ -100,7 +97,6 @@ h2.heading {
     color: #3cb4f0;
     opacity: .5;
 }
-
 .form input:-moz-placeholder {
     font-family: 'HelveticaNeueCyr';
     font-size: 20px;
@@ -228,4 +224,3 @@ h3.webinar span {
         color: #5d7993;
     }
 }
-
