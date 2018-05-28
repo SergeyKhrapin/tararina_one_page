@@ -196,9 +196,28 @@ h3.webinar span {
         width: 400px;
         height: 50px;
         margin: 0 0 50px;
+        font-size: 18px;
+        text-align: center;
     }
     .form input[type=submit] {
+        height: 70px;
         margin-bottom: 0;
+        font-size: 22px;
+    }
+    .form input::-webkit-input-placeholder {
+        font-size: 22px;
+    }
+    .form input::-ms-input-placeholder {
+        font-size: 22px;
+    }
+    .form input:-ms-input-placeholder {
+        font-size: 22px;
+    }
+    .form input::-moz-placeholder {
+        font-size: 22px;
+    }
+    .form input:-moz-placeholder {
+        font-size: 22px;
     }
     .list,
     .form p,
@@ -222,5 +241,36 @@ h3.webinar span {
     .bonus p {
         font-size: 24px;
         color: #5d7993;
+    }
+}
+@media (max-width: 700px) {
+    body {
+        background-position-x: -156px;
+    }
+    .main {
+        padding-top: 40px;
+    }
+    .heading {
+        font-size: 40px;
+    }
+    h3.webinar {
+        font-size: 44px;
+    }
+    .form {
+        padding: 40px 0 0;
+    }
+    .form input {
+        width: 80%;
+    }
+    .form input[type=submit] {
+        width: 100%;
+    }
+}
+@media (max-width: 500px) {
+    body {
+        background-position-x: -205px;
+    }
+    .form input {
+        width: 90%;
     }
 }
