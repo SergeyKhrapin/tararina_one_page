@@ -1,0 +1,231 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    font-family: 'HelveticaNeueCyr';
+    background: url('../img/tararina.png') 13% 100% no-repeat;
+}
+.main {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+.heading {
+    font-size: 50px;
+    font-weight: 900;
+    color: #2d6dc1;
+    text-transform: uppercase;
+}
+h1.heading {
+    width: 864px;
+    margin: 0;
+    opacity: .4;
+}
+h1.heading p {
+    margin: 0;
+}
+h1.heading p:first-child {
+    margin-bottom: 10px;
+}
+h2.heading {
+    width: 864px;
+    margin: 10px 0 0;
+    font-weight: 100;
+}
+.list {
+    width: 864px;
+    margin: 10px 0 20px;
+}
+.list p {
+    margin: 0 0 10px;
+    font-size: 36px;
+    font-weight: 300;
+    color: #2d6dc1;
+}
+.list ul {
+    margin: 0;
+    padding-left: 0;
+    font-size: 18px;
+}
+.form {
+    width: 864px;
+}
+.form p {
+    margin: 0 0 16px;
+    font-size: 26px;
+    color: #3cb4f0;
+}
+.form input {
+    width: 200px;
+    height: 36px;
+    margin-right: 4px;
+    padding: 0 10px;
+    border: 2px solid #3cb4f0;
+    box-sizing: border-box;
+}
+.form input::-webkit-input-placeholder {
+    font-family: 'HelveticaNeueCyr';
+    font-size: 20px;
+    font-stretch: condensed;
+    color: #3cb4f0;
+    opacity: .5;
+}
+
+.form input::-ms-input-placeholder {
+    font-family: 'HelveticaNeueCyr';
+    font-size: 20px;
+    font-stretch: condensed;
+    color: #3cb4f0;
+    opacity: .5;
+}
+
+.form input:-ms-input-placeholder {
+    font-family: 'HelveticaNeueCyr';
+    font-size: 20px;
+    font-stretch: condensed;
+    color: #3cb4f0;
+    opacity: .5;
+}
+
+.form input::-moz-placeholder {
+    font-family: 'HelveticaNeueCyr';
+    font-size: 20px;
+    font-stretch: condensed;
+    color: #3cb4f0;
+    opacity: .5;
+}
+
+.form input:-moz-placeholder {
+    font-family: 'HelveticaNeueCyr';
+    font-size: 20px;
+    font-stretch: condensed;
+    color: #3cb4f0;
+    opacity: .5;
+}
+.form input[type=submit] {
+    padding: 0;
+    background-color: #3cb4f0;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+}
+.bonus {
+    width: 864px;
+    margin: 54px 0 40px;
+    color: #3cb4f0;
+}
+.bonus h3 {
+    margin: 0 0 12px;
+    font-size: 45px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.bonus p {
+    margin: 0;
+    font-size: 18px;
+}
+h3.webinar {
+    width: 100%;
+    margin: 0 0 20px;
+    padding-left: 20px;
+    font-size: 55px;
+    opacity: .5;
+}
+h3.webinar span {
+    opacity: .7;
+}
+.footer {
+    background: rgba(43, 60, 103, .49);
+}
+.footer div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    max-width: 1170px;
+    height: 150px;
+    margin: 0 auto;
+    background: url('../img/footer.png') 90% 100% no-repeat;
+}
+.girl {
+    position: absolute;
+    right: -94px;
+    bottom: 0;
+    z-index: 2;
+}
+@media (max-width: 1600px) {
+    body {
+        background-position-x: 0;
+    }
+}
+@media (max-width: 1300px) {
+    h1.heading,
+    h2.heading,
+    .list,
+    .form,
+    .bonus {
+        width: calc(72% - 100px);
+    }
+    .girl {
+        right: 0;
+        z-index: 0;
+    }
+}
+@media (max-width: 1001px) {
+    h1.heading,
+    h2.heading,
+    .list,
+    .form,
+    .bonus {
+        width: 100%;
+        padding: 0 20px;
+        text-align: right;
+    }
+    .form {
+        order: 2;
+        padding-top: 40px;
+        background: rgba(43, 60, 103, .49);
+    }
+    .form form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .form input {
+        width: 400px;
+        height: 50px;
+        margin: 0 0 50px;
+    }
+    .form input[type=submit] {
+        margin-bottom: 0;
+    }
+    .list,
+    .form p,
+    .footer,
+    .girl {
+        display: none;
+    }
+    h2.heading {
+        margin-top: 50px;
+    }
+    h3.webinar {
+        padding: 0 20px;
+    }
+    h3.webinar span {
+        opacity: 1;
+    }
+    .heading span,
+    .bonus span {
+        display: block;
+    }
+    .bonus p {
+        font-size: 24px;
+        color: #5d7993;
+    }
+}
+
